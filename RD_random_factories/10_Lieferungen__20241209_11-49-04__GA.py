@@ -1234,22 +1234,12 @@ def make_random_grid_factory_with_paths():
 
 
 def main():
-    # factory = Factory()
-
-    # factory.create_temp_factory_machines()
-    # factory.create_temp_factory_machines_deadlock()
-    # factory.create_temp_factory_machines_4()
-    # factory.create_temp_factory_machines_PAPER()
-    # factory.create_temp_factory_machines_3()
-
-    # factory = make_random_grid_factory_with_paths()
-    # not_working_factory_1(factory)
 
     for num_vehicles in range(13):
         if num_vehicles >= 0:
 
-            with open(
-                    f"C:/Users/mente/PycharmProjects/ZellFTF_2DSim_PAPER_OR/VRP_Simulation/Random_Path_Factories/20241209_11-49-04_random_factory.pkl",
+            project_path = sys.path[1]
+            with open(f"{project_path}/VRP_Simulation/Random_Path_Factories/20241209_11-49-04_random_factory.pkl",
                     'rb') as inp:
                 factory = pickle.load(inp)
 
